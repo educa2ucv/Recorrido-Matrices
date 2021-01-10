@@ -63,6 +63,18 @@ void zigzag_horizontal(int m[][3]) {
 }
 
 void zigzag_vertical(int m[][3]) {
-    cout<<"::ZIGZAG VERTICLA::"<<endl;
+    cout<<"::ZIGZAG VERTICAL::"<<endl;
 
+    for (int j = 0; j < 3; j++ ){
+        if ( j % 2 == 0) {
+            for (int i = 0; i < 3; i++ ) {
+                cout<<m[i][j]<<" ";
+            }
+        } else {
+            for (int i = 2; i >= 0; i-- ) {
+                cout<<m[i][j]<<" ";
+            }
+        }
+        cout<<endl;
+    }
 }
