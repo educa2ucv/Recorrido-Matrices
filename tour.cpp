@@ -16,11 +16,15 @@ int main() {
     int mat[][3] = { {1,2,3}, {4,5,6}, {7,8,9} };
     // porFilas(mat);
     // porColumnas(mat);
-    
+    // zigzag_horizontal(mat);
+    zigzag_vertical(mat);
+
     return 0;
 }
 
 void porFilas(int m[][3]) {
+    cout<<"::POR FILAS::"<<endl;
+
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             cout<<m[i][j]<<" ";
@@ -30,6 +34,8 @@ void porFilas(int m[][3]) {
 }
 
 void porColumnas(int m[][3]) {
+    cout<<"::POR COLUMNAS::"<<endl;
+    
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             cout<<m[j][i]<<" ";
@@ -40,9 +46,23 @@ void porColumnas(int m[][3]) {
 }
 
 void zigzag_horizontal(int m[][3]) {
+    cout<<"::ZIGZAG HORIZONTAL::"<<endl;
 
+    for (int i = 0; i < 3; i++) {
+        if ( i % 2 == 0 ) {
+            for (int j = 0; j < 3; j++) {
+                cout<<m[i][j]<<" ";
+            }
+        } else {
+            for (int j = 2; j >= 0; j-- ) {
+                cout<<m[i][j]<<" ";
+            }
+        }
+        cout<<endl;
+    }
 }
 
 void zigzag_vertical(int m[][3]) {
+    cout<<"::ZIGZAG VERTICLA::"<<endl;
 
 }
