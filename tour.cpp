@@ -30,7 +30,7 @@ int main() {
     // zigzag_horizontal(mat);
     // zigzag_vertical(mat);
     // escalera_subiendo(mat);
-    escalera_bajando(mat);
+    // escalera_bajando(mat);
 
     return 0;
 }
